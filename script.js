@@ -6,9 +6,12 @@ fetch('music.json')
 
     data.forEach(song => {
       html += `
-        <div>
-          <h2>${song.title} - ${song.artist}</h2>
-          <a href="${song.fileUrl}" download="${song.title}.mp3">Download</a>
+        <div class="song">
+          <img src="${song.coverImage}" alt="${song.title} cover">
+          <div>
+            <h2>${song.title} - ${song.artist}</h2>
+            <button class="download-button" onclick="downloadSong('${song.fileUrl}', '${song.title}.mp3')">Download</button>
+          </div>
         </div>
       `;
     });
@@ -16,3 +19,10 @@ fetch('music.json')
     musicList.innerHTML = html;
   })
   .catch(error => console.error('Error:', error));
+
+function downloadSong(url, filename) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+}
