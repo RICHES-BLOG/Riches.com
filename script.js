@@ -1,28 +1,18 @@
-const musicPlayerContainer = document.getElementById('musicPlayerContainer');
-    const MAX_TRACKS = 5;
-    
-    function generateMusicPlayer(musicFile) {
-        // ... (Your existing code to create the music player)
-        console.log("creating player", musicFile);
-        const player = document.createElement('audio');
-        player.src = URL.createObjectURL(musicFile);
-        player.controls = true;
-        return player;
-    }
+fetch('music.json')
+  .then(response => response.json())
+  .then(data => {
+    const musicList = document.getElementById('music-list');
+    let html = '';
 
-    function addFileInput(){
-      const fileInput = document.createElement('input');
-      fileInput.type = 'file';
-      fileInput.accept = '.mp3';
-      fileInput.addEventListener('change', (event) => {
-        const musicPlayer = generateMusicPlayer(event.target.files[0]);
-        musicPlayerContainer.appendChild(musicPlayer);
-        fileInput.disabled = true;//disable after file loaded
-        addFileInput();//add one more
-      });
-      musicPlayerContainer.appendChild(fileInput);
-    }
+    data.forEach(song => {
+      html += `
+        <div>
+          <h2>${song.title} - ${song.artist}</h2>
+          <a href="${song.fileUrl}" download="${song.title}.mp3">Download</a>
+        </div>
+      `;
+    });
 
-    for(let i=0; i<MAX_TRACKS; i++){
-      addFileInput();//add a new input file
-    }
+    musicList.innerHTML = html;
+  })
+  .catch(error => console.error('Error:', error));
