@@ -1,3 +1,10 @@
+function downloadSong(url, filename) {
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+}
+
 fetch('music.json')
   .then(response => response.json())
   .then(data => {
@@ -20,9 +27,3 @@ fetch('music.json')
   })
   .catch(error => console.error('Error:', error));
 
-function downloadSong(url, filename) {
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.click();
-}
