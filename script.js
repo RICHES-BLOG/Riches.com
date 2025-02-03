@@ -38,4 +38,4 @@ fetch('music.json')
       musicList.appendChild(songDiv);
     });
   })
-  .catch(error => console.error('Error:', error));v
+  .catch(error => console.error('Error:', error));
