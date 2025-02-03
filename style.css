@@ -627,3 +627,24 @@ cursor: pointer;
 #contact button[type="submit"]:hover {
 background-color: #3e8e41;
 }
+
+.song {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .song img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    .download-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .download-button:hover {
+      background-color: #3e8e41;
+    }
