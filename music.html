@@ -1,52 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
+	<title>RICHES-BLOG MUSIC</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<link rel="icon" type="image/x-icon" href="favicon.jpg">
 </head>
 <body>
 	<header>
-<nav class="nav-bar">
-  <div class="hamburger-menu">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+		<nav>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i>Home</a> </li>
+	    <li><a href="Music.html"class="active"><i class="fa fa-music"></i>Music</a></li>
+		 <li><a href="movies.html"><i class="fa fa-film"></i>Movies</a></li>
+    </ul>
+  </nav>
+
+<div class="nav-menu">
+  <div class="nav-lines">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
   </div>
-  <ul class="nav-menu">
-  <li><a href="index.html"><i class="fas fa-home"></i>Home</a> </li>
-    <li><a href="blog.html"><i class="fa fa-blog"></i>Blog</a> </li>
-    <li><a href="web.html"><i class="fa fa-book"></i>Web</a> </li>
-    <li><a href="xxx.html"><i class="fas fa-phone"></i>Contact</a></li>
-	<li><a href="music.html"class="active"><i class="fas fa-music"></i>Music</a></li>
+  <ul class="nav-links">
+    <li><a href="index.html"class="active"><i class="fas fa-home"></i>Home</a> </li>
+	  <li><a href="Music.html"><i class="fa fa-music"></i>Music</a></li>
+	   <li><a href="movies.html"><i class="fa fa-film"></i>Movies</a></li>
   </ul>
-</nav>
-</header>
-  
-  <h1>Music Player</h1>
+</div>
+	</header>
+	           <!-- Main Section -->
+                     <!--...-->
+ <main>
+	<div class="music-categories">
+  <h2>Music Categories</h2>
+  <div class="categories">
+    <a href="#">International Music</a>
+    <a href="#">Naija Music</a>
+    <a href="#">Ghana Music</a>
+    <a href="#">Trending Music</a>
+    <a href="#">New Releases</a>
+    <a href="#">Afrobeats</a>
+    <a href="#">Hip-Hop/Rap</a>
+    <a href="#">R&B/Soul</a>
+    <a href="#">Electronic/Dance</a>
+  </div>
+</div>
+
+	<h1>Music Download</h1>
   <div id="music-list"></div>
+	
 
+</main>
 
-  
-<!-- Footer Section -->
-<footer>
-           <!-- ... -->
-
+                                             <!-- Footer Section -->
+	<footer>
+		                       <!-- ... -->
+<ul class="nav-bar">
+    <li><a href="blog.html"><i class="fa fa-blog"></i>Blog</a> </li>
+    <li><a href="web.html"class="active"><i class="fa fa-book"></i>Web</a> </li>
+    <li><a href="xxx.html"><i class="fas fa-phone"></i>Contact</a></li>
+	</ul>
+	
 <ul class="social-media-links">
 <li><a href="https://www.x.com/am_deejay_alex" target="_blank"><i class="fab fa-twitter"></i>X</a></li>
 <li><a href="https://www.facebook.com/richesbosseswealthy" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
 <li><a href="https://www.instagram.com/richesbosses" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
 <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
 </ul>
-<p>&copy; 2025 Riches Bosses Blog. All rights reserved.</p>
+<p><em>&copy; 2025 Riches Bosses Blog. All rights reserved.</em></p>
+	</footer>
+	
+<script src="script.js"></script>	
 
- </footer>
-  <script src="script.js"></script>
 </body>
 </html>
