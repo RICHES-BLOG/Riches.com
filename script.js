@@ -1,6 +1,8 @@
-fetch('music.json')
-  .then(response => response.json())
-  .then(data => {
+//correct using promises
+        fetch("music.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.grabberLinks); // Correctly accesses the data
     const musicList = document.getElementById('music-list');
     let html = '';
 
