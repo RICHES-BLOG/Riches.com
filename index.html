@@ -10,23 +10,26 @@
 <body>
                  <!-- Header Section -->
 <header>
-<nav class="nav-bar">
-  <div class="hamburger-menu">
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-  <ul class="nav-menu">
+  <nav>
+    <ul>
     <li><a href="index.html"class="active"><i class="fas fa-home"></i>Home</a> </li>
-     <li><a href="blog.html"><i class="fa fa-blog"></i>Blog</a> </li>
-    <li><a href="web.html"><i class="fa fa-book"></i>Web</a> </li>
-    <li><a href="xxx.html"><i class="fas fa-phone"></i>Contact</a></li>
-    <li><a href="music.html"><i class="fas fa-music"></i>Music</a></li>
-  </ul>
+	<li><a href="music.html"><i class="fas fa-music"></i>Music</a></li>
+	<li><a href="movies.html"><i class="fa fa-film"></i>Movies</a></li>
+	</ul>
 </nav>
+<div class="nav-menu">
+  <div class="nav-lines">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"class="active"><i class="fas fa-home"></i>Home</a> </li>
+	<li><a href="Music.html"><i class="fa fa-music"></i>Music</a></li>
+	 <li><a href="movies.html"><i class="fa fa-film"></i>Movies</a></li>
+  </ul>
+</div>
+
 <div class="blog-posts"><div class="social-sharing">
   <a href="https://www.facebook.com/richesbosseswealthy" target="_blank" class="facebook-share"><i class="fab fa-facebook"></i></i>Facebook</a>
   <a href="https://www.x.com/am_deejay_alex" target="_blank" class="twitter-share"><i class="fab fa-twitter"></i>Twitter</a>
@@ -40,15 +43,7 @@
     <button>Search</button>
   </form>
 </section>
-<style>
-. Category-display {
-background-color: #f7f7f7;
-  padding: 10px;
-  text-align: center;
-  width: 50%;
-  border: 1px solid #ccc;
-  }
-  </style>
+
 
 
 <p>Category: <span id="category-display"></span></p>
@@ -56,16 +51,10 @@ background-color: #f7f7f7;
 <select id="category">
   <option value="">Select a category</option>
   <option value="personal">Personal</option>
-  <option value="business">Business</option>
-  <option value="technology">Technology</option>
-  <option value="lifestyle">Lifestyle</option>
   <option value="videos">Videos</option>
   <option value="music">Music</option>
-  <option value="sports">Sports</option>
-  <option value="entertainment">Entertainment</option>
-  <option value="stories">Stories</option>
-  <option value="cartoons">Cartoons</option>
-  <option value="trending gist">Trending Gist</option>
+  <option value="animation">Animation</option>
+  <option value="trendings">Trendings</option>
 </select>
 </header>
                 <!-- main Section -->
@@ -113,6 +102,12 @@ background-color: #f7f7f7;
 <!-- Footer Section -->
 <footer>
            <!-- ... -->
+		   
+		   <ul class="nav-bar">
+    <li><a href="blog.html"><i class="fa fa-blog"></i>Blog</a> </li>
+    <li><a href="web.html"class="active"><i class="fa fa-book"></i>Web</a> </li>
+    <li><a href="xxx.html"><i class="fas fa-phone"></i>Contact</a></li>
+	</ul>
 
 <ul class="social-media-links">
 <li><a href="https://www.x.com/am_deejay_alex" target="_blank"><i class="fab fa-twitter"></i>X</a></li>
@@ -120,7 +115,7 @@ background-color: #f7f7f7;
 <li><a href="https://www.instagram.com/richesbosses" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
 <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
 </ul>
-<p>&copy; 2025 Riches Bosses Blog. All rights reserved.</p>
+<p><em>&copy; 2025 Riches Bosses Blog. All rights reserved.</em></p>
 
  </footer>
 
