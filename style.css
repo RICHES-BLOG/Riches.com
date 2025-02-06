@@ -13,7 +13,7 @@ p {
 }
 .nav-bar {
   background-color: indigo;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   position: relative;
 }
@@ -264,6 +264,8 @@ input[type="submit"]:hover {
 .newsletter-signup button:hover {
   background-color: #004c6d;
 }
+
+
 .search-bar {
   background-color: #f7f7f7;
   padding: 10px;
@@ -385,50 +387,7 @@ button:hover {
   background-color: var(--accent-color);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
 
-.grid-item {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-.grid-item img {
-  width: 40%;
-  height: 80px;
-  object-fit: cover;
-}
-.hero-container {
-  background-image: url('favicon.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.hero-container h1 {
-  font-size: 48px;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero-cta {
-  background-color: var(--primary-color);
-  color: #FFFFFF;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 20px;
-}
 
 .hero-cta:hover {
   background-color: var(--accent-color);
@@ -541,6 +500,42 @@ main {
   padding: 2em;
 }
 
+.video-categories {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border: 1px solid #ddd;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-categories li {
+margin-right: 20px;
+margin-bottom: 10px;
+}
+
+.video-categories a {
+text-decoration: none;
+color: #333;
+padding: 10px;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+
+.video-categories a {
+color: #007bff;
+}
+
+.video-categories a:hover {
+color: #007bff;
+background-color: #e0e0e0;
+}
+
+
 .music-player-container {
   display: flex;
   flex-wrap: wrap;
@@ -628,23 +623,102 @@ cursor: pointer;
 background-color: #3e8e41;
 }
 
-.song {
-      display: flex;
-      margin-bottom: 20px;
-    }
-    .song img {
-      width: 50px;
-      height: 50px;
-      margin-right: 20px;
-    }
-    .download-button {
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .download-button:hover {
-      background-color: #3e8e41;
-    }
+.nav-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.nav-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.line:hover {
+  background-color: #ccc;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+.nav-menu:hover .nav-links {
+  display: block;
+}
+
+
+.music-categories {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-categories h2 {
+  margin-top: 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #333;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.categories a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
