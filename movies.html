@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.jpg">
+	<title>Riches Blog Movies</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+				 <li><a href="movies.html"class="active"><i class="fa fa-film"></i>Movies</a></li>
+				 <li><a href="Music.html"><i class="fa fa-music"></i>Music</a></li>
+			</ul>
+			<form id="search-form">
+    <input type="search" id="search-input" placeholder="Search movies by title, genre, etc.">
+    <button type="submit">Search</button>
+  </form>
+
+		</nav>
+
+<div class="nav-menu">
+  <div class="nav-lines">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html"class="active"><i class="fas fa-home"></i>Home</a> </li>
+	<li><a href="Music.html"><i class="fa fa-music"></i>Music</a></li>
+	 <li><a href="movies.html"><i class="fa fa-film"></i>Movies</a></li>
+  </ul>
+</div>
+	</header>
+	<main>
+	
+	<ul class="video-categories">
+<li><a href="#animation" class="active">Animation</a></li>
+<li><a href="#action-movies">Action Movies</a></li>
+<li><a href="#kdrama">K-Drama</a></li>
+<li><a href="#comedy">Comedy</a></li>
+<li><a href="#horror">Horror</a></li>
+</ul>
+
+<style>
+ .button {
+ background-color: #007bff;  
+                  color: #fff; 
+                  padding: 12px 18px; 
+                  text-align: center; 
+				  text-decoration: none; 
+				  display: flex;
+				  align-item: center;
+				  cursor: pointer; 
+				  border: none; 
+				  border-radius: 20px; 
+				  
+				  }
+		.button:hover {
+		    background-color: #0056b3; 
+			}
+			.image {
+			  width: 45%; /* adjust the width as needed */
+			  height: 60%; /* adjust the height as needed */
+			  object-fit: cover;
+			  margin-right: 40px; add some space between the image and title */ 
+			}
+			
+			.title {
+			 color: #fff;
+			 font-size: 20px;
+			 font-weight: bold;
+			 position: center-left;
+			}
+  
+  </style>
+
+
+<h1>Movies</h1>
+  <div id="movie-list"></div>
+</main>
+	
+	
+	<!-- Footer Section -->
+	<footer>
+	
+	<ul class="nav-bar">
+    <li><a href="blog.html"><i class="fa fa-blog"></i>Blog</a> </li>
+    <li><a href="web.html"class="active"><i class="fa fa-book"></i>Web</a> </li>
+    <li><a href="xxx.html"><i class="fas fa-phone"></i>Contact</a></li>
+	</ul>
+		<!-- ... -->
+<ul class="social-media-links">
+<li><a href="https://www.x.com/am_deejay_alex" target="_blank"><i class="fab fa-twitter"></i>X</a></li>
+<li><a href="https://www.facebook.com/richesbosseswealthy" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+<li><a href="https://www.instagram.com/richesbosses" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+</ul>
+<p><em>&copy; 2025 Riches Bosses Blog. All rights reserved.</em></p>
+<a id="scroll-to-top" href="#top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+	</footer>
+<script src="script.js"></script>	
+</body>
+</html>
